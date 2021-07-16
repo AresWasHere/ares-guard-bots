@@ -1,7 +1,9 @@
 # Botumuzda Neler Mevcut?
 
 Guard 1 = Sunucu ayar koruması, sağ tık ban ve kick koruması, bot koruması.
+
 Guard 2 = Rol oluşturma koruması, rol silme koruması, rol ayar koruması, üye rol ve isim koruması.
+
 Guard 3 = Kanal oluşturma koruması, kanal silme koruması, kanal ayar koruması, webhook koruma, emoji silme ve yükleme koruması.
 
 
