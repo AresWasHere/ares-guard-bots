@@ -1,0 +1,19 @@
+{
+  "url": "Sunucunuzun_URL",
+  "status": "idle", 
+  "color": "RANDOM", 
+  "footer": "Developed By ARES",
+  "botdurum": "Developed By ARES",
+  
+  "sahip": "BOT SAHİP ID",
+  "sunucuid": "SUNUCU ID",
+  "defenderlog": "KORUMA LOG KANALI ID",
+  "karantinarol": "JAIL ROL ID",
+  "botVoiceChannelID": "BOTUN GİRECEĞİ SES KANALI ID",
+
+  "guardbot1": "1. BOT TOKENİ",
+  "guardbot2": "2. BOT TOKENİ",
+  "guardbot3": "3. BOT TOKENİ"
+  }
+
+  
