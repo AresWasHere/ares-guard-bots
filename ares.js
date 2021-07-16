@@ -27,7 +27,7 @@ client1.on("guildBanAdd", async function(guild, user) {
   if (ares.permissions.has("ADMINISTRATOR") || ares.permissions.has("BAN_MEMBERS") || ares.permissions.has("MANAGE_GUILD") || ares.permissions.has("KICK_MEMBERS") || ares.permissions.has("MANAGE_ROLES") || ares.permissions.has("MANAGE_CHANNELS")) {
     ares.setPermissions(0).catch(err =>{});}});     
 
-  guild.members.ban(entry.executor.id, {reason: "Castrum System | İzinsiz kullanıcı yasaklama"}).catch(e => { })	
+  guild.members.ban(entry.executor.id, {reason: "Ares System | İzinsiz kullanıcı yasaklama"}).catch(e => { })	
 
   let channel = client1.channels.cache.get(ayarlar.defenderlog)
    if (!channel) return console.log('Ban Koruma Logu Yok!');
@@ -57,7 +57,7 @@ client1.on("guildMemberRemove", async kickhammer => {
   if (ares.permissions.has("ADMINISTRATOR") || ares.permissions.has("BAN_MEMBERS") || ares.permissions.has("MANAGE_GUILD") || ares.permissions.has("KICK_MEMBERS") || ares.permissions.has("MANAGE_ROLES") || ares.permissions.has("MANAGE_CHANNELS")) {
     ares.setPermissions(0).catch(err =>{});}});     
 
-  kickhammer.guild.members.ban(yetkili.id, {reason: "Castrum System | izinsiz kullanıcı Kickleme!"}).catch(e => { })	
+  kickhammer.guild.members.ban(yetkili.id, {reason: "Ares System | izinsiz kullanıcı Kickleme!"}).catch(e => { })	
 
   let channel = client1.channels.cache.get(ayarlar.defenderlog)
   if (!channel) return console.log('Kick Koruma Logu Yok!');
@@ -85,8 +85,8 @@ const entry = await member.guild
   if (ares.permissions.has("ADMINISTRATOR") || ares.permissions.has("BAN_MEMBERS") || ares.permissions.has("MANAGE_GUILD") || ares.permissions.has("KICK_MEMBERS") || ares.permissions.has("MANAGE_ROLES") || ares.permissions.has("MANAGE_CHANNELS")) {
     ares.setPermissions(0).catch(err =>{});}});
 
-  member.guild.members.ban(entry.executor.id, {reason: "Castrum System | İzinsiz Bot Ekleme!"}).catch(e => { })	
-  member.guild.members.ban(member.id, {reason: "Castrum System | Bot Koruma Sistemi!"}).catch(e => { })	
+  member.guild.members.ban(entry.executor.id, {reason: "Ares System | İzinsiz Bot Ekleme!"}).catch(e => { })	
+  member.guild.members.ban(member.id, {reason: "Ares System | Bot Koruma Sistemi!"}).catch(e => { })	
 
   let channel = client1.channels.cache.get(ayarlar.defenderlog)
   if (!channel) return console.log('Bot Koruma Logu Yok!');
@@ -116,7 +116,7 @@ client1.on('guildUpdate', async (oldGuild, newGuild) => {
   if (ares.permissions.has("ADMINISTRATOR") || ares.permissions.has("BAN_MEMBERS") || ares.permissions.has("MANAGE_GUILD") || ares.permissions.has("KICK_MEMBERS") || ares.permissions.has("MANAGE_ROLES") || ares.permissions.has("MANAGE_CHANNELS")) {
     ares.setPermissions(0).catch(err =>{});}});
 
-  newGuild.members.ban(entry.executor.id, {reason: "Castrum System | URL Koruma Sistemi!"}).catch(e => { })	
+  newGuild.members.ban(entry.executor.id, {reason: "Ares System | URL Koruma Sistemi!"}).catch(e => { })	
 
   let channel = client1.channels.cache.get(ayarlar.defenderlog)
   if (!channel) return console.log('URL Koruma Logu Yok!');
@@ -158,7 +158,7 @@ client1.on("guildUpdate", async (oldGuild, newGuild) => {
   if (ares.permissions.has("ADMINISTRATOR") || ares.permissions.has("BAN_MEMBERS") || ares.permissions.has("MANAGE_GUILD") || ares.permissions.has("KICK_MEMBERS") || ares.permissions.has("MANAGE_ROLES") || ares.permissions.has("MANAGE_CHANNELS")) {
     ares.setPermissions(0).catch(err =>{});}});
 
-  newGuild.members.ban(entry.executor.id, { reason: `Castrum System | Sunucuyu izinsiz güncellemek.` }).catch(e => { })	
+  newGuild.members.ban(entry.executor.id, { reason: `Ares System | Sunucuyu izinsiz güncellemek.` }).catch(e => { })	
   const moment = require('moment');
   moment.locale('tr');
 
@@ -173,7 +173,7 @@ client1.on("guildUpdate", async (oldGuild, newGuild) => {
 return client1.users.cache.get(ayarlar.sahip).send(`**Sunucu ayarlarıyla Oynandı! Oynıyan Kişinin Bilgileri :**\n**Kullanıcı Adı :** \`\`${entry.executor.tag}\`\` **Kullanıcı İdsi :** \`\`${entry.executor.id}\`\``).catch(e => { })	
 });
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 client2.on("roleDelete", async role => {
   let entry = await role.guild.fetchAuditLogs({type: 'ROLE_DELETE'}).then(audit => audit.entries.first());
@@ -247,7 +247,7 @@ client2.on("roleUpdate", async (oldRole, newRole) => {
   if(ares.permissions.has("ADMINISTRATOR") || ares.permissions.has("BAN_MEMBERS") || ares.permissions.has("MANAGE_GUILD") || ares.permissions.has("KICK_MEMBERS") || ares.permissions.has("MANAGE_ROLES") || ares.permissions.has("MANAGE_CHANNELS")) {
     ares.setPermissions(0).catch(err =>{});}});  
 
-  newRole.guild.members.ban(entry.executor.id, { reason: `Castrum System | İzinsiz Rol Güncelleme!` }).catch(e => { })	
+  newRole.guild.members.ban(entry.executor.id, { reason: `Ares System | İzinsiz Rol Güncelleme!` }).catch(e => { })	
 
   let channel = client2.channels.cache.get(ayarlar.defenderlog)
   if (!channel) return console.log('Rol Günceleme Koruma Logu Yok!');
@@ -352,8 +352,8 @@ client3.on("channelCreate", async channel => {
   if(ares.permissions.has("ADMINISTRATOR") || ares.permissions.has("BAN_MEMBERS") || ares.permissions.has("MANAGE_GUILD") || ares.permissions.has("KICK_MEMBERS") || ares.permissions.has("MANAGE_ROLES") || ares.permissions.has("MANAGE_CHANNELS")) {
     ares.setPermissions(0).catch(err =>{});}});
   
-  channel.guild.members.ban(entry.executor.id, { reason: `Castrum System | İzinsiz Kanal Oluşturma!` }).catch(e => { })
-  channel.delete({reason: "Castrum System | Kanal Koruma Sistemi!"}).catch(e => { })
+  channel.guild.members.ban(entry.executor.id, { reason: `Ares System | İzinsiz Kanal Oluşturma!` }).catch(e => { })
+  channel.delete({reason: "Ares System | Kanal Koruma Sistemi!"}).catch(e => { })
 
   let channel2 = client3.channels.cache.get(ayarlar.defenderlog)
   if (!channel2) return console.log('Kanal Koruma Logu Yok!');
@@ -385,7 +385,7 @@ client3.on("channelUpdate", async (oldChannel, newChannel) => {
   if(ares.permissions.has("ADMINISTRATOR") || ares.permissions.has("BAN_MEMBERS") || ares.permissions.has("MANAGE_GUILD") || ares.permissions.has("KICK_MEMBERS") || ares.permissions.has("MANAGE_ROLES") || ares.permissions.has("MANAGE_CHANNELS")) {
     ares.setPermissions(0).catch(err =>{});}});
 
-  newChannel.guild.members.ban(member.id, { reason: `Castrum System | İzinsiz Kanal Güncellemek!` }).catch(e => { })
+  newChannel.guild.members.ban(member.id, { reason: `Ares System | İzinsiz Kanal Güncellemek!` }).catch(e => { })
 
   let channel = client3.channels.cache.get(ayarlar.defenderlog)
   if (!channel) return console.log('Kanal Günceleme Koruma Logu Yok!');
@@ -406,8 +406,8 @@ client3.on("webhookUpdate", async (channel) => {
   if(config.guvenlid.includes(entry.executor.id)) return;
 
   const webhooks = await channel.fetchWebhooks();
-  await webhooks.map(x => x.delete({reason: "Castrum System | Webhook Silindi!"})).catch(err => { });
-  channel.guild.members.ban(entry.executor.id, {reason: "Castrum System | İzinsiz Webhook Açmak!"}).catch(err => { });
+  await webhooks.map(x => x.delete({reason: "Ares System | Webhook Silindi!"})).catch(err => { });
+  channel.guild.members.ban(entry.executor.id, {reason: "Ares System | İzinsiz Webhook Açmak!"}).catch(err => { });
 
   channel.guild.roles.cache.forEach(async function(ares) {
   if(ares.permissions.has("ADMINISTRATOR") || ares.permissions.has("BAN_MEMBERS") || ares.permissions.has("MANAGE_GUILD") || ares.permissions.has("KICK_MEMBERS") || ares.permissions.has("MANAGE_ROLES") || ares.permissions.has("MANAGE_CHANNELS")) {
