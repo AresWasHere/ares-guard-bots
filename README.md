@@ -19,3 +19,7 @@ ayarlar.json ve ares.json dosyalarını editledikten sonra botu rahatlıkla kull
 # İletişim ;
 
 [İnstagram](https://instagram.com/aresowner)
+
+[Discord Sunucum](https://discord.gg/eventus)
+
+[Github](https://github.com/AresWasHere)
