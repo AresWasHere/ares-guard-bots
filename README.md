@@ -15,3 +15,7 @@ Sunucuda güvenli listede olmayan herhangi biri bir işlem yaptığında, sunucu
 # Nereleri Editlemelisiniz?
 
 ayarlar.json ve ares.json dosyalarını editledikten sonra botu rahatlıkla kullanabilirsiniz. İyi kullanımlar.
+
+# İletişim ;
+
+[İnstagram](https://instagram.com/aresowner)
